@@ -55,8 +55,10 @@ let webpackConfig = merge(baseWebpackConfig, {
             },
             // necessary to consistently work with multiple chunks via CommonsChunkPlugin
             chunksSortMode: 'dependency',
+            {{#pwa}}
             serviceWorkerLoader: `<script>${fs.readFileSync(path.join(__dirname,
                 './service-worker-prod.js'), 'utf-8')}</script>`
+            {{/pwa}}
         }),
         // split vendor js into its own file
         new webpack.optimize.CommonsChunkPlugin({
