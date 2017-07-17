@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const utils = require('./utils');
 const webpack = require('webpack');
 const config = require('../config');
@@ -53,7 +54,9 @@ let webpackConfig = merge(baseWebpackConfig, {
                 // https://github.com/kangax/html-minifier#options-quick-reference
             },
             // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-            chunksSortMode: 'dependency'
+            chunksSortMode: 'dependency',
+            serviceWorkerLoader: `<script>${fs.readFileSync(path.join(__dirname,
+                './service-worker-prod.js'), 'utf-8')}</script>`
         }),
         // split vendor js into its own file
         new webpack.optimize.CommonsChunkPlugin({

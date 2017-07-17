@@ -92,6 +92,10 @@ module.exports = {
             message: 'Use ESLint to lint your code?',
             short: 'Standard'
         },
+        pwa: {
+            type: 'confirm',
+            message: 'Use Service Worker?'
+        },
         unit: {
             type: 'confirm',
             message: 'Unit test with jest?',
@@ -132,6 +136,6 @@ module.exports = {
         console.log('  npm run build');
 
         console.log(chalk.cyan('\n  Documentation:\n'));
-        console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
+        console.log('  https://github.com/hqqxxf/react-webpack-cli\n');
     }
 };
