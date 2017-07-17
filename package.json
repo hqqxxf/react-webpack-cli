@@ -1,0 +1,19 @@
+{
+  "name": "react-pwa-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.58corp.com:heqianqian01/react-pwa-cli.git"
+  },
+  "author": "heqianqian@zhuanzhaun.com",
+  "license": "ISC"
+}
