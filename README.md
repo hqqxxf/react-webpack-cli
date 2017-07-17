@@ -7,7 +7,6 @@
 
 > A SPA boilerplate with React, built with love.
 
-<div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
  - **React 15.6.1**
@@ -34,10 +33,10 @@
 npm install -g sao
 
 # download the template
-sao SidKwok/react-webpack-boilerplate new-project --install
+sao hqqxxf/react-webpack-cli new-project --install
 
 # if you would like to try React 16
-sao SidKwok/react-webpack-boilerplate#next new-project --install
+sao hqqxxf/react-webpack-cli#next new-project --install
 
 # install all this dependencies.
 cd new-project
