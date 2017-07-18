@@ -35,9 +35,6 @@ npm install -g sao
 # download the template
 sao hqqxxf/react-webpack-cli new-project --install
 
-# if you would like to try React 16
-sao hqqxxf/react-webpack-cli#next new-project --install
-
 # install all this dependencies.
 cd new-project
 npm install
