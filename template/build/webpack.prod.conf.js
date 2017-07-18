@@ -57,8 +57,7 @@ let webpackConfig = merge(baseWebpackConfig, {
                 // https://github.com/kangax/html-minifier#options-quick-reference
             },
             // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-            chunksSortMode: 'dependency',
-            {{#pwa}}
+            chunksSortMode: 'dependency'{{#pwa}},
             serviceWorkerLoader: `<script>${fs.readFileSync(path.join(__dirname,
                 './service-worker-prod.js'), 'utf-8')}</script>`
             {{/pwa}}
