@@ -8,6 +8,9 @@ const baseWebpackConfig = require('./webpack.base.conf');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+{{#pwa}}
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+{{/pwa}}
 const env = config.build.env;
 
 let webpackConfig = merge(baseWebpackConfig, {
@@ -80,6 +83,16 @@ let webpackConfig = merge(baseWebpackConfig, {
             name: 'manifest',
             chunks: ['vendor']
         }),
+        {{#pwa}}
+        // service worker caching
+        new SWPrecacheWebpackPlugin({
+            cacheId: 'my-react-app',
+            filename: 'service-worker.js',
+            staticFileGlobs: ['dist/**/*.{js,html,css}'],
+            minify: true,
+            stripPrefix: 'dist/'
+        }),
+        {{/pwa}}
         // copy custom static assets
         new CopyWebpackPlugin([
             {

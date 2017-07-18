@@ -1,11 +1,11 @@
-# react-pwa-cli
+# react-webpack-cli
 
 ![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.0-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E2.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
-> A SPA boilerplate with React, built with love.
+> A SPA template with React, like vue-cli.
 
 
 ## Features
