@@ -7,7 +7,7 @@
 
 > A SPA template with React, like vue-cli.
 
-
+test
 ## Features
  - **React 15.6.1**
  - **Redux 3.7.0**
